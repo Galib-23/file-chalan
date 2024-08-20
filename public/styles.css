@@ -1,0 +1,97 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #9ec0f7); 
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    min-height: 100vh;
+    text-align: center;
+    padding: 50px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header-title {
+    color: #162a3d;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header-description {
+    color: #34495e;
+    font-size: 1.2rem;
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    margin: 10px 0 5px;
+    color: #2c3e50;
+}
+
+form input[type="file"],
+form input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+form input[type="file"] {
+    background-color: #ecf0f1;
+}
+
+form input[type="password"] {
+    background-color: #f8f9fa;
+}
+
+form input[type="file"]:focus,
+form input[type="password"]:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+@media (max-width: 768px) {
+    body{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .header-description {
+        font-size: 1rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
