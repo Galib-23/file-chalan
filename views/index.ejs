@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <% if (locals.fileLink != null) { %>
+    <div style="margin-bottom: 1rem; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+      <h2>Your file is uploaded</h2>
+      <p>Share this link below</p>
+      <a href="<%= locals.fileLink %>"> <%= locals.fileLink %> </a>
+    </div>
+    <% } %>
     <div class="header">
       <h1 class="header-title">File Chalan</h1>
       <p class="header-description">
