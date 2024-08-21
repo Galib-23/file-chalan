@@ -2,6 +2,7 @@ const express = require("express");
 const multer = require("multer");
 const dotenv = require("dotenv");
 const bcrypt = require("bcrypt");
+const fs = require("fs");
 const { connectToDb } = require("./db/connectToDb.js");
 const { File } = require("./models/file.model.js");
 dotenv.config();
