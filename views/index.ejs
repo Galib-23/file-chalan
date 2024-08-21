@@ -4,18 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div class="header">
-        <h1 class="header-title">File Chalan</h1>
-        <p class="header-description">Transfer your files seamlessly with File chalan</p>
+      <h1 class="header-title">File Chalan</h1>
+      <p class="header-description">
+        Transfer your files seamlessly with File chalan
+      </p>
     </div>
-    <form class="form">
+    <form
+      action="/upload"
+      method="post"
+      class="form"
+      enctype="multipart/form-data"
+    >
       <label for="file">File:</label>
       <input type="file" name="file" id="file" required />
       <label for="password">Password:</label>
       <input type="password" name="password" id="password" />
+      <button class="button">Share</button>
     </form>
   </body>
 </html>

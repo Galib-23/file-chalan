@@ -76,6 +76,20 @@ form input[type="password"]:focus {
     border-color: #3498db;
 }
 
+.button {
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+    border: 2px;
+    background-color: #34495e;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #747677;
+    color: white;
+}
+
 @media (max-width: 768px) {
     body{
         flex-direction: column;
